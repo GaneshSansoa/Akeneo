@@ -6,10 +6,10 @@ use App\Products\Product;
 require_once realpath("vendor/autoload.php");
 
     //Making API Object
-    $apiObj = new AkeneoAPI("2_2qozanx8smw4ow84w0wwss048csg800ookc000w8wccwcsc0go",
-    "2es78w1mp0n48c444k8sc4o8wgc40w80ssk8k888sow84wcssk",
-    "test_2932",
-    "5af166ff8");
+    $apiObj = new AkeneoAPI("CLIENT_ID",
+    "SECRET",
+    "USERNAME",
+    "PASSWORD");
 
     //Make Connection
     $res = $apiObj->makeConnection();

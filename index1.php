@@ -5,10 +5,10 @@ use App\Products\TestProduct;
 
 require_once realpath("vendor/autoload.php");
 
-    $obj = new Api("2_2igt15n1ri0wk8cwcwwows8c0sw4cssoswwokwwks0occ8swkw",
-    "4mgwi6j61s84gkw8w0ss88gg4okokcw4wco4c4c4gcoco8g8o0",
-    "test_2583",
-    "c5fa6fcfc");
+    $obj = new Api("CLIENT_ID",
+    "SECRET",
+    "USERNAME",
+    "PASSWORD");
     $res = $obj->makeConnection();
     if(isset($res->access_token)){
         session_start();
